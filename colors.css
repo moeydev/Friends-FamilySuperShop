@@ -1,0 +1,53 @@
+/* Primary Colors */
+:root {
+    --primary-brown: #8b4513;
+    --primary-beige: #d4a574;
+    --secondary-beige: #f5e6d3;
+    --light-beige: #f9f3eb;
+    --dark-brown: #654321;
+    --cream: #fff8f0;
+}
+
+/* Color Utility Classes */
+.bg-primary-brown { background-color: var(--primary-brown); }
+.bg-primary-beige { background-color: var(--primary-beige); }
+.bg-secondary-beige { background-color: var(--secondary-beige); }
+.bg-light-beige { background-color: var(--light-beige); }
+.bg-cream { background-color: var(--cream); }
+
+.text-primary-brown { color: var(--primary-brown); }
+.text-primary-beige { color: var(--primary-beige); }
+
+/* Product Color Boxes */
+.color-boxes {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+.color-red { background-color: #ff0000; }
+.color-blue { background-color: #0000ff; }
+.color-green { background-color: #00ff00; }
+.color-black { background-color: #000000; }
+.color-white { background-color: #ffffff; border: 1px solid #ddd; }
+.color-yellow { background-color: #ffff00; }
+.color-purple { background-color: #800080; }
+.color-pink { background-color: #ffc0cb; }
+.color-orange { background-color: #ffa500; }
+.color-brown { background-color: #a52a2a; }
+.color-gray { background-color: #808080; }
+.color-navy { background-color: #000080; }
+.color-teal { background-color: #008080; }
