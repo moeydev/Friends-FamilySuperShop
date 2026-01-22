@@ -1,37 +1,92 @@
 /* Tablet Styles */
 @media (max-width: 1024px) {
-    .nav-links {
-        display: none;
+    .container {
+        padding: 0 15px;
     }
     
-    .mobile-menu-btn {
-        display: block;
-    }
-    
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-    
+    .categories-grid,
     .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-content h2 {
+        font-size: 2.8rem;
     }
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .nav-container {
-        padding: 1rem;
+    /* Top Header */
+    .top-header-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
     
-    .hero {
-        height: 60vh;
+    /* Main Header */
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
     }
     
-    .hero-content h1 {
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .user-actions {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Navigation */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--dark-color);
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu > li > a {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    
+    /* Hero Banner */
+    .hero-banner {
+        height: 400px;
+    }
+    
+    .hero-content h2 {
         font-size: 2rem;
     }
     
@@ -39,53 +94,78 @@
         font-size: 1rem;
     }
     
-    .categories,
-    .featured-products {
-        padding: 3rem 1rem;
+    /* Categories & Products */
+    .categories-grid,
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
+    .category-image {
+        height: 200px;
+    }
+    
+    .product-image {
+        height: 250px;
+    }
+    
+    /* Section Titles */
     .section-title {
-        font-size: 2rem;
-    }
-    
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-    .logo a {
         font-size: 1.5rem;
     }
     
-    .hero {
-        height: 50vh;
+    /* Offer Banner */
+    .offer-content h2 {
+        font-size: 1.8rem;
     }
     
-    .btn-primary {
-        padding: 0.8rem 1.5rem;
-    }
-    
-    .products-grid {
+    /* Footer */
+    .footer-content {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    /* Cart Sidebar */
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
     }
 }
 
-/* Mobile Menu Active State */
-.nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    padding: 1rem;
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .categories-grid,
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-banner {
+        height: 300px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-hero,
+    .btn-offer {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .product-info {
+        padding: 15px;
+    }
+    
+    .quick-view {
+        opacity: 1;
+        bottom: 10px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
