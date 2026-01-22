@@ -3,134 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarong Style E-commerce</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Friends & Family Super Shop - Premium Shopping Experience</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">AARONG <span>STYLE</span></a>
-            </div>
-            
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <a href="pages/products/clothing.html">Clothing <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="pages/products/clothing.html#men">Men's Wear</a>
-                        <a href="pages/products/clothing.html#women">Women's Wear</a>
-                        <a href="pages/products/clothing.html#kids">Kids Wear</a>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-content">
+                <p>Welcome to Friends & Family Super Shop | Free Shipping on orders above ৳3000</p>
+                <div class="top-header-links">
+                    <a href="pages/about.html">About Us</a>
+                    <a href="pages/contact.html">Contact</a>
+                    <a href="#">Store Locator</a>
+                    <div class="currency-selector">
+                        <select>
+                            <option value="BDT">BDT ৳</option>
+                            <option value="USD">USD $</option>
+                        </select>
                     </div>
                 </div>
-                <a href="pages/products/accessories.html">Accessories</a>
-                <a href="pages/products/home-decor.html">Home Decor</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/contact.html">Contact</a>
             </div>
-            
-            <div class="nav-icons">
-                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
-                <a href="#" class="user-btn"><i class="fas fa-user"></i></a>
-                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Friends & Family</h1>
+                        <span>Super Shop</span>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search for products, brands and more..." class="search-input">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <a href="#" class="action-item">
+                        <i class="far fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                    <a href="#" class="action-item">
+                        <i class="far fa-heart"></i>
+                        <span>Wishlist</span>
+                    </a>
+                    <a href="#" class="action-item cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Cart</span>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-navigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="pages/products.html">Clothing <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-column">
+                            <h4>Women's Wear</h4>
+                            <a href="pages/category.html?category=women-saree">Sarees</a>
+                            <a href="pages/category.html?category=women-salwar">Salwar Kameez</a>
+                            <a href="pages/category.html?category=women-kurti">Kurtis</a>
+                            <a href="pages/category.html?category=women-dress">Dresses</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>Men's Wear</h4>
+                            <a href="pages/category.html?category=men-panjabi">Panjabis</a>
+                            <a href="pages/category.html?category=men-shirt">Shirts</a>
+                            <a href="pages/category.html?category=men-pants">Pants</a>
+                            <a href="pages/category.html?category=men-vest">Vests</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>Kids Wear</h4>
+                            <a href="pages/category.html?category=kids-girls">Girls</a>
+                            <a href="pages/category.html?category=kids-boys">Boys</a>
+                            <a href="pages/category.html?category=kids-infant">Infant</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/products.html">Accessories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="pages/category.html?category=jewelry">Jewelry</a>
+                        <a href="pages/category.html?category=bags">Bags</a>
+                        <a href="pages/category.html?category=footwear">Footwear</a>
+                        <a href="pages/category.html?category=scarf">Scarves & Stoles</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/products.html">Home & Living <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="pages/category.html?category=home-decor">Home Decor</a>
+                        <a href="pages/category.html?category=furniture">Furniture</a>
+                        <a href="pages/category.html?category=kitchen">Kitchen & Dining</a>
+                        <a href="pages/category.html?category=bedding">Bedding</a>
+                    </div>
+                </li>
+                <li><a href="pages/products.html">New Arrivals</a></li>
+                <li><a href="pages/products.html">Best Sellers</a></li>
+                <li><a href="pages/products.html">Offers</a></li>
+            </ul>
             
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
 
     <!-- Hero Banner -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Traditional Elegance Meets Modern Style</h1>
-            <p>Handcrafted with love and tradition</p>
-            <a href="pages/products/clothing.html" class="btn-primary">Shop Now</a>
+    <section class="hero-banner">
+        <div class="hero-slide active">
+            <div class="hero-content">
+                <h2>Festive Collection 2024</h2>
+                <p>Traditional Elegance with Modern Touch</p>
+                <a href="pages/products.html" class="btn-hero">Shop Now</a>
+            </div>
         </div>
     </section>
 
-    <!-- Categories -->
-    <section class="categories">
-        <h2 class="section-title">Shop by Category</h2>
-        <div class="category-grid">
-            <div class="category-card">
-                <a href="pages/products/clothing.html">
-                    <div class="category-img" style="background-color: #f8e8e8;">
-                        <img src="images/categories/clothing.jpg" alt="Clothing">
-                    </div>
-                    <h3>Clothing</h3>
-                </a>
-            </div>
-            <div class="category-card">
-                <a href="pages/products/accessories.html">
-                    <div class="category-img" style="background-color: #e8f4f8;">
-                        <img src="images/categories/accessories.jpg" alt="Accessories">
-                    </div>
-                    <h3>Accessories</h3>
-                </a>
-            </div>
-            <div class="category-card">
-                <a href="pages/products/home-decor.html">
-                    <div class="category-img" style="background-color: #f0f8e8;">
-                        <img src="images/categories/home-decor.jpg" alt="Home Decor">
-                    </div>
-                    <h3>Home Decor</h3>
-                </a>
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop By Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <a href="pages/category.html?category=women">
+                        <div class="category-image women">
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Women</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="pages/category.html?category=men">
+                        <div class="category-image men">
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Men</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="pages/category.html?category=kids">
+                        <div class="category-image kids">
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Kids</h3>
+                    </a>
+                </div>
+                <div class="category-card">
+                    <a href="pages/category.html?category=home-decor">
+                        <div class="category-image home">
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Home & Living</h3>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Featured Products -->
     <section class="featured-products">
-        <h2 class="section-title">Featured Products</h2>
-        <div class="products-grid" id="featured-products">
-            <!-- Products will be loaded via JavaScript -->
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x400/FFE5E5/333?text=Silk+Saree" alt="Silk Saree">
+                        <div class="product-badge">New</div>
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Banarasi Silk Saree</h3>
+                        <p class="product-category">Women's Clothing</p>
+                        <div class="price-section">
+                            <span class="current-price">৳ 5,999</span>
+                            <span class="original-price">৳ 7,499</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-dot red active"></span>
+                            <span class="color-dot blue"></span>
+                            <span class="color-dot green"></span>
+                            <span class="color-dot gold"></span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x400/E5F4FF/333?text=Panjabi+Set" alt="Panjabi Set">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Embroidered Panjabi</h3>
+                        <p class="product-category">Men's Clothing</p>
+                        <div class="price-section">
+                            <span class="current-price">৳ 3,499</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-dot white active"></span>
+                            <span class="color-dot black"></span>
+                            <span class="color-dot navy"></span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x400/E5FFE5/333?text=Terracotta+Vase" alt="Terracotta Vase">
+                        <div class="product-badge">Bestseller</div>
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Handmade Terracotta Vase</h3>
+                        <p class="product-category">Home Decor</p>
+                        <div class="price-section">
+                            <span class="current-price">৳ 1,299</span>
+                            <span class="original-price">৳ 1,999</span>
+                            <span class="discount">35% off</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-dot brown active"></span>
+                            <span class="color-dot terracotta"></span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x400/FFE5FF/333?text=Jewelry+Set" alt="Jewelry Set">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Traditional Jewelry Set</h3>
+                        <p class="product-category">Accessories</p>
+                        <div class="price-section">
+                            <span class="current-price">৳ 2,799</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-dot silver active"></span>
+                            <span class="color-dot gold"></span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Banner -->
+    <section class="offer-banner">
+        <div class="container">
+            <div class="offer-content">
+                <h2>Winter Sale is Live!</h2>
+                <p>Up to 50% off on all winter collections</p>
+                <a href="pages/products.html" class="btn-offer">Shop The Sale</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/products/clothing.html">Clothing</a></li>
-                    <li><a href="pages/products/accessories.html">Accessories</a></li>
-                    <li><a href="pages/products/home-decor.html">Home Decor</a></li>
-                </ul>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Friends & Family</h3>
+                        <span>Super Shop</span>
+                    </div>
+                    <p>Premium shopping experience with traditional and modern products for the whole family.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="pages/products.html">Women</a></li>
+                        <li><a href="pages/products.html">Men</a></li>
+                        <li><a href="pages/products.html">Kids</a></li>
+                        <li><a href="pages/products.html">Home & Living</a></li>
+                        <li><a href="pages/products.html">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Exchange</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Shopping Street, Dhaka 1205</li>
+                        <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+                        <li><i class="fas fa-envelope"></i> info@friendsfamily.com</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="pages/contact.html">Contact Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Shipping Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Friends & Family Super Shop. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Aarong Style. All rights reserved.</p>
-        </div>
     </footer>
 
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">৳ 0</span>
+            </div>
+            <button class="btn-checkout">Proceed to Checkout</button>
+        </div>
+    </div>
+
     <!-- JavaScript -->
-    <script src="js/products.js"></script>
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
 </body>
 </html>
