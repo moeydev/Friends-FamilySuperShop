@@ -1,54 +1,14 @@
 /* Color Palette for Friends & Family Super Shop */
 
 :root {
-    /* Primary Colors */
-    --color-primary: #8b4513;      /* Brown - Main brand color */
-    --color-primary-light: #a5672a;
-    --color-primary-dark: #6b3410;
-    
-    /* Secondary Colors */
-    --color-secondary: #d4a574;    /* Beige/Tan */
-    --color-secondary-light: #e6c4a0;
-    --color-secondary-dark: #b89464;
-    
-    /* Accent Colors */
-    --color-accent: #ff6b6b;       /* Coral Red */
-    --color-accent-light: #ff9999;
-    --color-accent-dark: #ff5252;
-    
-    /* Neutral Colors */
-    --color-dark: #333333;
-    --color-gray: #666666;
-    --color-gray-light: #999999;
-    --color-border: #e0e0e0;
-    --color-light: #f8f8f8;
-    --color-white: #ffffff;
-    
-    /* Status Colors */
-    --color-success: #4CAF50;
-    --color-warning: #ff9800;
-    --color-error: #f44336;
-    --color-info: #2196F3;
-    
-    /* Product Colors */
-    --color-red: #ff0000;
-    --color-blue: #0000ff;
-    --color-green: #00ff00;
-    --color-yellow: #ffd700;
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-navy: #000080;
-    --color-brown: #8b4513;
-    --color-pink: #ffc0cb;
-    --color-purple: #800080;
-    --color-orange: #ffa500;
-    --color-gray: #808080;
-    --color-silver: #c0c0c0;
-    --color-gold: #ffd700;
-    --color-teal: #008080;
-    --color-maroon: #800000;
+    --primary: #800000; /* Deep Maroon */
+    --accent: #B8860B;  /* Gold */
+    --text-dark: #2d2d2d;
+    --text-light: #757575;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
+    --border: #e0e0e0;
 }
-
 /* Color Utility Classes */
 .bg-primary { background-color: var(--color-primary); }
 .bg-secondary { background-color: var(--color-secondary); }
